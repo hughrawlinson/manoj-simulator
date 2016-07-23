@@ -1,0 +1,21 @@
+{
+  "name": "manoj-simulator",
+  "version": "0.0.3-SNAPSHOT",
+  "description": "A simulator for Manoj Nathwani's big LED display",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/.bin/electron ."
+  },
+  "bin": {
+    "manoj-simulator": "./bin/manoj-simulator"
+  },
+  "author": "Hugh Rawlinson <hugh@codeoclock.net",
+  "license": "MIT",
+  "dependencies": {
+    "electron-prebuilt": "^1.2.8",
+    "gaussian": "^1.1.0",
+    "hapi": "^13.5.0",
+    "ramda": "^0.21.0"
+  }
+}
