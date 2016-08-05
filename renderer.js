@@ -12,9 +12,11 @@
   ctx.canvas.height = window.innerHeight;
   var displayConfig = require('./displayConfig.json');
   ipcRenderer.on('info', function(event, data) {
-    const d = new ImageData(new Uint8ClampedArray(R.compose(R.flatten, R.map(a => {
+    const da = R.compose(R.flatten, R.map(a => {
       return R.append(255)(a);
-    }))(data)), displayConfig.x, displayConfig.y);
+    }))(data);
+    console.log(da)
+    const d = new ImageData(new Uint8ClampedArray(da), displayConfig.x, displayConfig.y);
     console.log(d);
     ctx.putImageData(scaleImageData(d, displayConfig.res),0,0);
   });

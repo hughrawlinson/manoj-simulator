@@ -1,16 +1,15 @@
-(function() {
-  const createApp = function() {
+(function main() {
+  const createApp = function createApp() {
     const electron = require('electron');
     // Module to control application life.
     const {
-      app
+      app,
     } = electron;
     // Module to create native browser window.
     const {
-      BrowserWindow
+      BrowserWindow,
     } = electron;
 
-    const pixelString = require('./pixelString');
     const displayConfig = require('./displayConfig');
 
     let win;
