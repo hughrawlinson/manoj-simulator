@@ -15,7 +15,7 @@
   "dependencies": {
     "electron-prebuilt": "^1.2.8",
     "gaussian": "^1.1.0",
-    "hapi": "^16.1.0",
+    "hapi": "^16.5.2",
     "ramda": "^0.23.0"
   }
 }
